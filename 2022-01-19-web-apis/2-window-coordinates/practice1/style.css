@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+html,
+body,
+* {
+  background-color: black;
+}
+
+#cursor {
+  position: absolute;
+  pointer-events: none;
+}
+
+#container {
+  position: relative;
+}
+
+#coordinatesWrap {
+  position: absolute;
+  top: 90px;
+  left: 70px;
+  display: flex;
+}
+
+#x,
+#y {
+  padding: 5px;
+  font-size: 25px;
+  color: #fff;
+}

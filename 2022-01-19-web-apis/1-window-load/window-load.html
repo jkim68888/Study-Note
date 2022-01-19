@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- defer : html 이 호출된 후 바로 스크립트 실행 -->
+    <script src="test.js" defer></script>
+  </head>
+  <body>
+    <script>
+      // 도큐먼트만 로드 되고 나도 스크립트가 실행됨
+      window.addEventListener('DOMContentLoaded', () => {
+        console.log('DOMContentLoaded')
+      })
+
+      // 모든 리소스들이 (css, images, fonts...) 로드 되고 나야 스크립트가 실행됨
+      window.addEventListener('load', () => {
+        console.log('load')
+      })
+    </script>
+  </body>
+</html>
